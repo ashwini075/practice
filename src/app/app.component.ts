@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl,Validators } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +7,13 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'my-app2';
-  
+  //userControl = new FormControl();
+  userControl = new FormControl( '',[
+    Validators.required,
+    Validators.minLength(3),
+    Validators.maxLength(6),
+
+
+  ]);
+
 }

@@ -1,0 +1,13 @@
+<p>page1 works!</p>
+<h1>Multifield form</h1>
+<div [formGroup]="myformGroup">
+    <div style="margin-bottom: 4px;">
+        <input type="text" name="" id="" [formControlName]="username"  />
+    </div>
+    <div style="margin-bottom: 4px;">
+        <input type="password" name="" id="" [formControlName]="password"  />  
+    </div>
+</div>
+<div>
+    <button [disabled]>SignIn</button>
+</div>

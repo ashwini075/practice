@@ -3,15 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-//import { FormControl } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Page1Component } from './page1/page1.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    Page1Component,
        
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
    
   ],
   providers: [],
