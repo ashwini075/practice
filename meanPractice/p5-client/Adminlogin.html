@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--css linking-->
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="logincheck.php">
+    <title>AdminLogin</title>
+
+</head>
+<body>
+    <header>
+        <div class ="container center-div shadow ">                 <!--shadow used for box shadow-->
+            <div class="heading text-center text-white mb-5" > ADMIN LOGIN</div>
+            <div class="container row d-flex justify-content-center mb-5">
+                <div class ="admin-form shadow p-4">
+                    <form action="logincheck.php" method="post">
+                        <div class ="form-group">
+                            <label for name="user">Email Id :</label><br>
+                            <input type="text" name="user" value=" " autocomplete="off"><br>
+                        </div>
+                        <div class ="form-group">
+                            <label> Password :</label><br>
+                            <input type="text " name="password" value=" " autocomplete="off"> <br>
+                        </div>
+                        <button type="submit" class="btn btn-success" name="" >Login </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
